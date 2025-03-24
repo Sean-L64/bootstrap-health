@@ -12,7 +12,10 @@
 
 
 }
-
+.header-title{
+    padding-top: 5vh;
+    font-size: 3rem;
+}
 #icon {
     margin-left: 5vw;
 }
