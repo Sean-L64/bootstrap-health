@@ -20,15 +20,34 @@
         flex-wrap: wrap;
         padding-bottom: 5vh;
     }
+
     body #header-main {
         font-size: 2rem;
 
     }
-    
+
     body #header-sub {
         font-size: 1rem;
     }
 
+    body .benefits,
+    .disadvantages {
+        margin-left: 5vw;
+        padding-top: 6vh;
+        padding-bottom: 6vh;
+        font-size: 18px;
+    }
+    body img{
+        width: 90vw;
+    }
+    body #solutiontv-img{
+        margin-left: 5vw;
+        margin-right: 5vw
+    }
+    body #solution-img{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
 
 
 
@@ -36,8 +55,9 @@
 
 .content {
     display: flex;
-    padding-bottom: 5vh;
+    padding-bottom: 10vh;
 }
+
 
 .img-list {
     display: flex;
@@ -46,8 +66,19 @@
     margin-left: 5vw;
     margin-right: 5vw;
     width: 40vw;
+    background: linear-gradient(90deg, rgb(14, 220, 239), rgb(0, 30, 255));
+    box-shadow: 0 0 100px teal;
+    transition: 0.25s ease;
+    
 
 }
+.img-list:hover{
+    transition: 0.25s ease;
+    transform: scale(110%);
+    padding: 5px;
+}
+
+
 
 #def-img,
 #tv-img {
@@ -56,6 +87,47 @@
     height: 50vh;
     margin-left: 5vw;
     margin-right: 5vw;
+    background: linear-gradient(90deg, rgb(14, 220, 239), rgb(0, 30, 255));
+    box-shadow: 0 0 100px teal;
+    transition: 0.25s ease;
+}
+#def-img:hover,
+#tv-img:hover{
+    transition: 0.25s ease;
+    transform: scale(110%);
+    padding: 5px;
+}
+#solution-img{
+    display: flex;
+    border-radius: 22px;
+    height: 55vh;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    background: linear-gradient(90deg, rgb(14, 220, 239), rgb(0, 30, 255));
+    box-shadow: 0 0 100px teal;
+    transition: 0.25s ease;
+}
+#solutiontv-img{
+    display: flex;
+    border-radius: 22px;
+    height: 55vh;
+    margin-top: 8vh;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    background: linear-gradient(90deg, rgb(14, 220, 239), rgb(0, 30, 255));
+    box-shadow: 0 0 100px teal;
+    transition: 0.25s ease;
+}
+#solutiontv-img:hover{
+    transition: 0.25s ease;
+    transform: scale(110%);
+    padding: 5px;
+}
+#solution-img:hover{
+    transition: 0.25s ease;
+    transform: scale(110%);
+    padding: 5px;
 }
 
 .def-desc,
@@ -72,11 +144,22 @@
 
 .benefits {
     margin-right: 10vw;
+    padding-bottom: 2.5vh;
     font-size: 18px;
 }
 
+.info-desc {
+    font-size: 23px;
+    padding: 0 10vw 10vh 10vw
+}
+.social-list{
+    font-size: 18px;
+}
+
+
 .disadvantages {
     margin-right: 5vw;
+    padding-bottom: 2.5vh;
     font-size: 18px;
 }
 
@@ -87,16 +170,19 @@
     align-items: center;
     border-radius: 22px;
     padding-top: 2vh;
+    margin-left: 5vw;
     font-size: 24px;
 
 }
 
-.solutions-list, .resources-list {
+.solutions-list,
+.resources-list {
     text-align: center;
 }
 
 .header-title {
-    padding-top: 5vh;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
     font-size: 3rem;
 }
 
@@ -213,6 +299,8 @@ a {
     text-decoration: none;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
 }
+
+
 
 
 @keyframes fadeInUp {
