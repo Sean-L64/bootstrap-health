@@ -10,12 +10,96 @@
         margin-left: 5vw;
     }
 
+    body #def-img {
+        height: 40vh;
+        justify-content: center;
+    }
+
+    body .content {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 5vh;
+    }
+    body #header-main {
+        font-size: 2rem;
+
+    }
+    
+    body #header-sub {
+        font-size: 1rem;
+    }
+
+
+
 
 }
-.header-title{
+
+.content {
+    display: flex;
+    padding-bottom: 5vh;
+}
+
+.img-list {
+    display: flex;
+    border-radius: 22px;
+    height: 35vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 40vw;
+
+}
+
+#def-img,
+#tv-img {
+    display: flex;
+    border-radius: 22px;
+    height: 50vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.def-desc,
+#tv-desc {
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 22px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-width: 3px;
+    border-color: red;
+    margin-top: 5vh;
+}
+
+.benefits {
+    margin-right: 10vw;
+    font-size: 18px;
+}
+
+.disadvantages {
+    margin-right: 5vw;
+    font-size: 18px;
+}
+
+.solutions {
+    justify-content: center;
+    display: inline-block;
+    text-align: left;
+    align-items: center;
+    border-radius: 22px;
+    padding-top: 2vh;
+    font-size: 24px;
+
+}
+
+.solutions-list, .resources-list {
+    text-align: center;
+}
+
+.header-title {
     padding-top: 5vh;
     font-size: 3rem;
 }
+
 #icon {
     margin-left: 5vw;
 }
@@ -30,7 +114,7 @@ a {
 }
 
 #navbarSupportedContent {
-    margin-left: 19vw;
+    margin-left: 15vw;
 }
 
 #navbar-list {
@@ -38,17 +122,15 @@ a {
 }
 
 
-.header {
-    padding: 10vh;
-}
-
+.header,
 .subheader {
-    padding-bottom: 25vh;
-
-    #image-list {
-        margin-left: -2vw;
-    }
+    padding: 5vh;
 }
+
+#image-list {
+    margin-left: -2vw;
+}
+
 
 .source-list {
     padding-top: 5vh;
@@ -88,6 +170,11 @@ a {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+.flex-list {
+    color: white;
+
+}
+
 .carousel {
     padding-top: -20px;
     width: 100%;
@@ -100,19 +187,20 @@ a {
     height: 100%;
     height: 95vh;
     object-fit: cover;
-
-    .carousel-img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .carousel-item {
-        width: 100%;
-        height: 100%;
-        filter: brightness(50%);
-    }
-
 }
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+}
+
+
 
 .btn {
     z-index: 20;
@@ -129,7 +217,7 @@ a {
 
 @keyframes fadeInUp {
     0% {
-        transform: translateY(150%);
+        transform: translateY(100%);
         opacity: 0;
     }
 
@@ -145,7 +233,7 @@ a {
 
 @keyframes fadeInDown {
     0% {
-        transform: translateY(-50%);
+        transform: translateY(-100%);
         opacity: 0;
     }
 
